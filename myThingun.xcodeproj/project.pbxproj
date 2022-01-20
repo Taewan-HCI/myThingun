@@ -7,18 +7,67 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC026C112799513A002285CD /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC026C102799513A002285CD /* SearchBarView.swift */; };
+		DC3704542798FE5600FC2759 /* SeoulNamsanEB.otf in Resources */ = {isa = PBXBuildFile; fileRef = DC37044F2798FE5600FC2759 /* SeoulNamsanEB.otf */; };
+		DC3704552798FE5600FC2759 /* SeoulNamsanM.otf in Resources */ = {isa = PBXBuildFile; fileRef = DC3704502798FE5600FC2759 /* SeoulNamsanM.otf */; };
+		DC3704562798FE5600FC2759 /* SeoulNamsanvert.otf in Resources */ = {isa = PBXBuildFile; fileRef = DC3704512798FE5600FC2759 /* SeoulNamsanvert.otf */; };
+		DC3704572798FE5600FC2759 /* SeoulNamsanL.otf in Resources */ = {isa = PBXBuildFile; fileRef = DC3704522798FE5600FC2759 /* SeoulNamsanL.otf */; };
+		DC3704582798FE5600FC2759 /* SeoulNamsanB.otf in Resources */ = {isa = PBXBuildFile; fileRef = DC3704532798FE5600FC2759 /* SeoulNamsanB.otf */; };
+		DC37045A27991A6D00FC2759 /* AddThingunView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC37045927991A6D00FC2759 /* AddThingunView.swift */; };
+		DC37045D27991DD700FC2759 /* ThingunDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DC37045B27991DD700FC2759 /* ThingunDataModel.xcdatamodeld */; };
+		DC370462279920D200FC2759 /* Thingun+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC37045E279920D200FC2759 /* Thingun+CoreDataClass.swift */; };
+		DC370463279920D200FC2759 /* Thingun+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC37045F279920D200FC2759 /* Thingun+CoreDataProperties.swift */; };
+		DC370464279920D200FC2759 /* Notes+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC370460279920D200FC2759 /* Notes+CoreDataClass.swift */; };
+		DC370465279920D200FC2759 /* Notes+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC370461279920D200FC2759 /* Notes+CoreDataProperties.swift */; };
+		DC370486279938B700FC2759 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC370485279938B700FC2759 /* Persistence.swift */; };
+		DC37048827993B0D00FC2759 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC37048727993B0D00FC2759 /* Constants.swift */; };
 		DCBC4DEE279851C10013E746 /* myThingunApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBC4DED279851C10013E746 /* myThingunApp.swift */; };
-		DCBC4DF0279851C10013E746 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBC4DEF279851C10013E746 /* ContentView.swift */; };
+		DCBC4DF0279851C10013E746 /* ThingunTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBC4DEF279851C10013E746 /* ThingunTabView.swift */; };
 		DCBC4DF2279851C30013E746 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCBC4DF1279851C30013E746 /* Assets.xcassets */; };
 		DCBC4DF5279851C30013E746 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCBC4DF4279851C30013E746 /* Preview Assets.xcassets */; };
+		DCBC4E012798526F0013E746 /* thinguns.json in Resources */ = {isa = PBXBuildFile; fileRef = DCBC4E002798526F0013E746 /* thinguns.json */; };
+		DCBC4E03279855470013E746 /* ThingunFeaturedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBC4E02279855470013E746 /* ThingunFeaturedView.swift */; };
+		DCBC4E05279855570013E746 /* ThingunListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBC4E04279855570013E746 /* ThingunListView.swift */; };
+		DCBC4E07279855A40013E746 /* Thingun.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBC4E06279855A40013E746 /* Thingun.swift */; };
+		DCBC4E09279856920013E746 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBC4E08279856920013E746 /* DataService.swift */; };
+		DCBC4E0C279858EA0013E746 /* ThingunModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBC4E0B279858EA0013E746 /* ThingunModel.swift */; };
+		DCBC4E0E27985B380013E746 /* ThingunDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBC4E0D27985B380013E746 /* ThingunDetailView.swift */; };
+		DCF3761E2799B72900B0791A /* AddMetaData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF3761D2799B72900B0791A /* AddMetaData.swift */; };
+		DCF376202799C28900B0791A /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF3761F2799C28900B0791A /* ImagePicker.swift */; };
+		DCF376222799DE0600B0791A /* TextBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF376212799DE0600B0791A /* TextBox.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DC026C102799513A002285CD /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
+		DC37044F2798FE5600FC2759 /* SeoulNamsanEB.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SeoulNamsanEB.otf; sourceTree = "<group>"; };
+		DC3704502798FE5600FC2759 /* SeoulNamsanM.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SeoulNamsanM.otf; sourceTree = "<group>"; };
+		DC3704512798FE5600FC2759 /* SeoulNamsanvert.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SeoulNamsanvert.otf; sourceTree = "<group>"; };
+		DC3704522798FE5600FC2759 /* SeoulNamsanL.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SeoulNamsanL.otf; sourceTree = "<group>"; };
+		DC3704532798FE5600FC2759 /* SeoulNamsanB.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SeoulNamsanB.otf; sourceTree = "<group>"; };
+		DC37045927991A6D00FC2759 /* AddThingunView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddThingunView.swift; sourceTree = "<group>"; };
+		DC37045C27991DD700FC2759 /* ThingunDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ThingunDataModel.xcdatamodel; sourceTree = "<group>"; };
+		DC37045E279920D200FC2759 /* Thingun+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Thingun+CoreDataClass.swift"; sourceTree = "<group>"; };
+		DC37045F279920D200FC2759 /* Thingun+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Thingun+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		DC370460279920D200FC2759 /* Notes+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Notes+CoreDataClass.swift"; sourceTree = "<group>"; };
+		DC370461279920D200FC2759 /* Notes+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Notes+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		DC370485279938B700FC2759 /* Persistence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		DC37048727993B0D00FC2759 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		DCBC4DEA279851C10013E746 /* myThingun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myThingun.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCBC4DED279851C10013E746 /* myThingunApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myThingunApp.swift; sourceTree = "<group>"; };
-		DCBC4DEF279851C10013E746 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DCBC4DEF279851C10013E746 /* ThingunTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThingunTabView.swift; sourceTree = "<group>"; };
 		DCBC4DF1279851C30013E746 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DCBC4DF4279851C30013E746 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DCBC4E002798526F0013E746 /* thinguns.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = thinguns.json; sourceTree = "<group>"; };
+		DCBC4E02279855470013E746 /* ThingunFeaturedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThingunFeaturedView.swift; sourceTree = "<group>"; };
+		DCBC4E04279855570013E746 /* ThingunListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThingunListView.swift; sourceTree = "<group>"; };
+		DCBC4E06279855A40013E746 /* Thingun.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Thingun.swift; sourceTree = "<group>"; };
+		DCBC4E08279856920013E746 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		DCBC4E0B279858EA0013E746 /* ThingunModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThingunModel.swift; sourceTree = "<group>"; };
+		DCBC4E0D27985B380013E746 /* ThingunDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThingunDetailView.swift; sourceTree = "<group>"; };
+		DCBC4E0F279876DC0013E746 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		DCF3761D2799B72900B0791A /* AddMetaData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMetaData.swift; sourceTree = "<group>"; };
+		DCF3761F2799C28900B0791A /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		DCF376212799DE0600B0791A /* TextBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextBox.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +81,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DC37044E2798FDF600FC2759 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				DC3704532798FE5600FC2759 /* SeoulNamsanB.otf */,
+				DC37044F2798FE5600FC2759 /* SeoulNamsanEB.otf */,
+				DC3704522798FE5600FC2759 /* SeoulNamsanL.otf */,
+				DC3704502798FE5600FC2759 /* SeoulNamsanM.otf */,
+				DC3704512798FE5600FC2759 /* SeoulNamsanvert.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		DCBC4DE1279851C10013E746 = {
 			isa = PBXGroup;
 			children = (
@@ -52,7 +113,14 @@
 			isa = PBXGroup;
 			children = (
 				DCBC4DED279851C10013E746 /* myThingunApp.swift */,
-				DCBC4DEF279851C10013E746 /* ContentView.swift */,
+				DC37044E2798FDF600FC2759 /* Fonts */,
+				DCBC4E0F279876DC0013E746 /* Info.plist */,
+				DCBC4DFC279851E20013E746 /* Views */,
+				DCBC4E0A279858D50013E746 /* ViewModels */,
+				DCBC4DFF279851F50013E746 /* Utilities */,
+				DCBC4DFE279851EE0013E746 /* Data */,
+				DCBC4DFD279851E70013E746 /* Services */,
+				DCBC4DFB279851D50013E746 /* Models */,
 				DCBC4DF1279851C30013E746 /* Assets.xcassets */,
 				DCBC4DF3279851C30013E746 /* Preview Content */,
 			);
@@ -65,6 +133,100 @@
 				DCBC4DF4279851C30013E746 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DCBC4DFB279851D50013E746 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DCBC4E06279855A40013E746 /* Thingun.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DCBC4DFC279851E20013E746 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DCBC4DEF279851C10013E746 /* ThingunTabView.swift */,
+				DCF3761C2799B70A00B0791A /* ThingunFeaturedView */,
+				DCF3761B27995F4900B0791A /* Thingun List */,
+				DCF3761A27995F2000B0791A /* Thingun Detail */,
+				DCF3761927995F1100B0791A /* Add Thingun */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DCBC4DFD279851E70013E746 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				DCBC4E08279856920013E746 /* DataService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		DCBC4DFE279851EE0013E746 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				DC370485279938B700FC2759 /* Persistence.swift */,
+				DCBC4E002798526F0013E746 /* thinguns.json */,
+				DC37045B27991DD700FC2759 /* ThingunDataModel.xcdatamodeld */,
+				DC37045E279920D200FC2759 /* Thingun+CoreDataClass.swift */,
+				DC37045F279920D200FC2759 /* Thingun+CoreDataProperties.swift */,
+				DC370460279920D200FC2759 /* Notes+CoreDataClass.swift */,
+				DC370461279920D200FC2759 /* Notes+CoreDataProperties.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		DCBC4DFF279851F50013E746 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				DC37048727993B0D00FC2759 /* Constants.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		DCBC4E0A279858D50013E746 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				DCBC4E0B279858EA0013E746 /* ThingunModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		DCF3761927995F1100B0791A /* Add Thingun */ = {
+			isa = PBXGroup;
+			children = (
+				DC37045927991A6D00FC2759 /* AddThingunView.swift */,
+				DCF3761D2799B72900B0791A /* AddMetaData.swift */,
+				DCF3761F2799C28900B0791A /* ImagePicker.swift */,
+				DCF376212799DE0600B0791A /* TextBox.swift */,
+			);
+			path = "Add Thingun";
+			sourceTree = "<group>";
+		};
+		DCF3761A27995F2000B0791A /* Thingun Detail */ = {
+			isa = PBXGroup;
+			children = (
+				DCBC4E0D27985B380013E746 /* ThingunDetailView.swift */,
+			);
+			path = "Thingun Detail";
+			sourceTree = "<group>";
+		};
+		DCF3761B27995F4900B0791A /* Thingun List */ = {
+			isa = PBXGroup;
+			children = (
+				DCBC4E04279855570013E746 /* ThingunListView.swift */,
+				DC026C102799513A002285CD /* SearchBarView.swift */,
+			);
+			path = "Thingun List";
+			sourceTree = "<group>";
+		};
+		DCF3761C2799B70A00B0791A /* ThingunFeaturedView */ = {
+			isa = PBXGroup;
+			children = (
+				DCBC4E02279855470013E746 /* ThingunFeaturedView.swift */,
+			);
+			path = ThingunFeaturedView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,7 +288,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				DCBC4DF5279851C30013E746 /* Preview Assets.xcassets in Resources */,
+				DC3704562798FE5600FC2759 /* SeoulNamsanvert.otf in Resources */,
+				DC3704542798FE5600FC2759 /* SeoulNamsanEB.otf in Resources */,
+				DC3704552798FE5600FC2759 /* SeoulNamsanM.otf in Resources */,
 				DCBC4DF2279851C30013E746 /* Assets.xcassets in Resources */,
+				DC3704572798FE5600FC2759 /* SeoulNamsanL.otf in Resources */,
+				DCBC4E012798526F0013E746 /* thinguns.json in Resources */,
+				DC3704582798FE5600FC2759 /* SeoulNamsanB.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +305,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DCBC4DF0279851C10013E746 /* ContentView.swift in Sources */,
+				DCBC4E05279855570013E746 /* ThingunListView.swift in Sources */,
+				DC370462279920D200FC2759 /* Thingun+CoreDataClass.swift in Sources */,
+				DC37045D27991DD700FC2759 /* ThingunDataModel.xcdatamodeld in Sources */,
+				DC370465279920D200FC2759 /* Notes+CoreDataProperties.swift in Sources */,
+				DCBC4E07279855A40013E746 /* Thingun.swift in Sources */,
+				DCBC4DF0279851C10013E746 /* ThingunTabView.swift in Sources */,
+				DCBC4E09279856920013E746 /* DataService.swift in Sources */,
+				DCF376202799C28900B0791A /* ImagePicker.swift in Sources */,
+				DC37048827993B0D00FC2759 /* Constants.swift in Sources */,
+				DCF3761E2799B72900B0791A /* AddMetaData.swift in Sources */,
+				DCBC4E03279855470013E746 /* ThingunFeaturedView.swift in Sources */,
+				DCBC4E0E27985B380013E746 /* ThingunDetailView.swift in Sources */,
+				DC370486279938B700FC2759 /* Persistence.swift in Sources */,
 				DCBC4DEE279851C10013E746 /* myThingunApp.swift in Sources */,
+				DC37045A27991A6D00FC2759 /* AddThingunView.swift in Sources */,
+				DC370463279920D200FC2759 /* Thingun+CoreDataProperties.swift in Sources */,
+				DCBC4E0C279858EA0013E746 /* ThingunModel.swift in Sources */,
+				DC026C112799513A002285CD /* SearchBarView.swift in Sources */,
+				DCF376222799DE0600B0791A /* TextBox.swift in Sources */,
+				DC370464279920D200FC2759 /* Notes+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,11 +458,14 @@
 				DEVELOPMENT_TEAM = 7Q45DBK6W7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = myThingun/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Access to the camera to take a photo";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -301,11 +490,14 @@
 				DEVELOPMENT_TEAM = 7Q45DBK6W7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = myThingun/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Access to the camera to take a photo";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -341,6 +533,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		DC37045B27991DD700FC2759 /* ThingunDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DC37045C27991DD700FC2759 /* ThingunDataModel.xcdatamodel */,
+			);
+			currentVersion = DC37045C27991DD700FC2759 /* ThingunDataModel.xcdatamodel */;
+			path = ThingunDataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = DCBC4DE2279851C10013E746 /* Project object */;
 }

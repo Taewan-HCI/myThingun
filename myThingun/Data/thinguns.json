@@ -1,0 +1,27 @@
+[
+    {
+        "content": "조금만 버티면, 휴가가 기다린다. 휴가 가면 아무생각 안날꺼야..",
+        "featured": true,
+        "image" : "sunrise",
+        "description": "논문 결과를 기다리는건 너무 힘들다",
+        "author": "내가 씀",
+        "date": "22년 1월 19일",
+        "notes": [
+            {"notecontents": "휴 오늘도 이거보면서 힘낸다", "notedate": "22년 3월 21일", "notetime": "02시 12분"}
+        ]
+    },
+    {
+        "content": "항상 맑으면 사막이 된다. 비가 내리고 바람이 불어야만 비옥한 땅이 된다.",
+        "featured": true,
+        "image" : "mountain",
+        "description": "나이가 들어가는 것 같아 씁슬하네..",
+        "author": "스페인 속담",
+        "date": "22년 1월 19일",
+        "notes": [
+            {"notecontents": "휴 오늘도 이거보면서 힘낸다", "notedate": "22년 3월 21일", "notetime": "02시 12분"}
+        ]
+    }
+    
+]
+
+

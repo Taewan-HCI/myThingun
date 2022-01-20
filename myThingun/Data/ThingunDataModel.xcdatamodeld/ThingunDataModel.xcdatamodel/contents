@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="19574" systemVersion="21C52" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Notes" representedClassName="Notes" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="notecontent" optional="YES" attributeType="String"/>
+        <attribute name="notedate" optional="YES" attributeType="String"/>
+        <attribute name="notetime" optional="YES" attributeType="String"/>
+        <relationship name="thingun" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Thingun" inverseName="notes" inverseEntity="Thingun"/>
+    </entity>
+    <entity name="Thingun" representedClassName="Thingun" syncable="YES">
+        <attribute name="author" optional="YES" attributeType="String"/>
+        <attribute name="content" attributeType="String"/>
+        <attribute name="date" optional="YES" attributeType="String"/>
+        <attribute name="featured" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="image" optional="YES" attributeType="Binary"/>
+        <attribute name="summary" attributeType="String"/>
+        <relationship name="notes" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Notes" inverseName="thingun" inverseEntity="Notes"/>
+    </entity>
+    <elements>
+        <element name="Thingun" positionX="-63" positionY="-18" width="128" height="149"/>
+        <element name="Notes" positionX="-54" positionY="45" width="128" height="104"/>
+    </elements>
+</model>

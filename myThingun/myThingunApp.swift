@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct myThingunApp: App {
+    let persistenceController = PersistenceController.shared
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ThingunTabView()
+                .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
 }
