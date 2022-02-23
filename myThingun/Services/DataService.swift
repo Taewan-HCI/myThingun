@@ -10,10 +10,20 @@ import Foundation
 class DataService {
     static func getLocalData() -> [ThingunJSON] {
         
+        var json_lang = "thinguns"
         
+        let pre = Locale.preferredLanguages[0]
+        print(pre)
+
+        if pre == "ko-US" {
+            json_lang = "thinguns"
+        }
+        else {
+            json_lang = "thinguns_eng"
+        }
         
         //get a url path to json file
-        let pathString = Bundle.main.path(forResource: "thinguns", ofType:"json")
+        let pathString = Bundle.main.path(forResource: json_lang, ofType:"json")
         
         //check if pathString is not nil, otherwise..
         

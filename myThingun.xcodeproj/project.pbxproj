@@ -21,20 +21,23 @@
 		DC370465279920D200FC2759 /* Notes+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC370461279920D200FC2759 /* Notes+CoreDataProperties.swift */; };
 		DC370486279938B700FC2759 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC370485279938B700FC2759 /* Persistence.swift */; };
 		DC37048827993B0D00FC2759 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC37048727993B0D00FC2759 /* Constants.swift */; };
+		DC69DDF8279AB02800239265 /* EditThingunView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC69DDF7279AB02800239265 /* EditThingunView.swift */; };
 		DCBC4DEE279851C10013E746 /* myThingunApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBC4DED279851C10013E746 /* myThingunApp.swift */; };
 		DCBC4DF0279851C10013E746 /* ThingunTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBC4DEF279851C10013E746 /* ThingunTabView.swift */; };
 		DCBC4DF2279851C30013E746 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCBC4DF1279851C30013E746 /* Assets.xcassets */; };
 		DCBC4DF5279851C30013E746 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCBC4DF4279851C30013E746 /* Preview Assets.xcassets */; };
 		DCBC4E012798526F0013E746 /* thinguns.json in Resources */ = {isa = PBXBuildFile; fileRef = DCBC4E002798526F0013E746 /* thinguns.json */; };
 		DCBC4E03279855470013E746 /* ThingunFeaturedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBC4E02279855470013E746 /* ThingunFeaturedView.swift */; };
-		DCBC4E05279855570013E746 /* ThingunListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBC4E04279855570013E746 /* ThingunListView.swift */; };
 		DCBC4E07279855A40013E746 /* Thingun.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBC4E06279855A40013E746 /* Thingun.swift */; };
 		DCBC4E09279856920013E746 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBC4E08279856920013E746 /* DataService.swift */; };
 		DCBC4E0C279858EA0013E746 /* ThingunModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBC4E0B279858EA0013E746 /* ThingunModel.swift */; };
 		DCBC4E0E27985B380013E746 /* ThingunDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBC4E0D27985B380013E746 /* ThingunDetailView.swift */; };
+		DCDCDE6527C6290F00D5333F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DCDCDE6727C6290F00D5333F /* Localizable.strings */; };
+		DCDCDE6A27C638B900D5333F /* thinguns_eng.json in Resources */ = {isa = PBXBuildFile; fileRef = DCDCDE6927C638B900D5333F /* thinguns_eng.json */; };
 		DCF3761E2799B72900B0791A /* AddMetaData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF3761D2799B72900B0791A /* AddMetaData.swift */; };
 		DCF376202799C28900B0791A /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF3761F2799C28900B0791A /* ImagePicker.swift */; };
 		DCF376222799DE0600B0791A /* TextBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF376212799DE0600B0791A /* TextBox.swift */; };
+		DCF37625279A63B300B0791A /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF37624279A63B300B0791A /* ListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +55,7 @@
 		DC370461279920D200FC2759 /* Notes+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Notes+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		DC370485279938B700FC2759 /* Persistence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		DC37048727993B0D00FC2759 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		DC69DDF7279AB02800239265 /* EditThingunView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditThingunView.swift; sourceTree = "<group>"; };
 		DCBC4DEA279851C10013E746 /* myThingun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myThingun.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCBC4DED279851C10013E746 /* myThingunApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myThingunApp.swift; sourceTree = "<group>"; };
 		DCBC4DEF279851C10013E746 /* ThingunTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThingunTabView.swift; sourceTree = "<group>"; };
@@ -59,15 +63,18 @@
 		DCBC4DF4279851C30013E746 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DCBC4E002798526F0013E746 /* thinguns.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = thinguns.json; sourceTree = "<group>"; };
 		DCBC4E02279855470013E746 /* ThingunFeaturedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThingunFeaturedView.swift; sourceTree = "<group>"; };
-		DCBC4E04279855570013E746 /* ThingunListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThingunListView.swift; sourceTree = "<group>"; };
 		DCBC4E06279855A40013E746 /* Thingun.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Thingun.swift; sourceTree = "<group>"; };
 		DCBC4E08279856920013E746 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		DCBC4E0B279858EA0013E746 /* ThingunModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThingunModel.swift; sourceTree = "<group>"; };
 		DCBC4E0D27985B380013E746 /* ThingunDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThingunDetailView.swift; sourceTree = "<group>"; };
 		DCBC4E0F279876DC0013E746 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		DCDCDE6627C6290F00D5333F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		DCDCDE6827C6293D00D5333F /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
+		DCDCDE6927C638B900D5333F /* thinguns_eng.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = thinguns_eng.json; sourceTree = "<group>"; };
 		DCF3761D2799B72900B0791A /* AddMetaData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMetaData.swift; sourceTree = "<group>"; };
 		DCF3761F2799C28900B0791A /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		DCF376212799DE0600B0791A /* TextBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextBox.swift; sourceTree = "<group>"; };
+		DCF37624279A63B300B0791A /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +130,7 @@
 				DCBC4DFB279851D50013E746 /* Models */,
 				DCBC4DF1279851C30013E746 /* Assets.xcassets */,
 				DCBC4DF3279851C30013E746 /* Preview Content */,
+				DCDCDE6727C6290F00D5333F /* Localizable.strings */,
 			);
 			path = myThingun;
 			sourceTree = "<group>";
@@ -168,6 +176,7 @@
 			children = (
 				DC370485279938B700FC2759 /* Persistence.swift */,
 				DCBC4E002798526F0013E746 /* thinguns.json */,
+				DCDCDE6927C638B900D5333F /* thinguns_eng.json */,
 				DC37045B27991DD700FC2759 /* ThingunDataModel.xcdatamodeld */,
 				DC37045E279920D200FC2759 /* Thingun+CoreDataClass.swift */,
 				DC37045F279920D200FC2759 /* Thingun+CoreDataProperties.swift */,
@@ -200,6 +209,7 @@
 				DCF3761D2799B72900B0791A /* AddMetaData.swift */,
 				DCF3761F2799C28900B0791A /* ImagePicker.swift */,
 				DCF376212799DE0600B0791A /* TextBox.swift */,
+				DC69DDF7279AB02800239265 /* EditThingunView.swift */,
 			);
 			path = "Add Thingun";
 			sourceTree = "<group>";
@@ -215,7 +225,7 @@
 		DCF3761B27995F4900B0791A /* Thingun List */ = {
 			isa = PBXGroup;
 			children = (
-				DCBC4E04279855570013E746 /* ThingunListView.swift */,
+				DCF37624279A63B300B0791A /* ListView.swift */,
 				DC026C102799513A002285CD /* SearchBarView.swift */,
 			);
 			path = "Thingun List";
@@ -271,6 +281,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ko,
 			);
 			mainGroup = DCBC4DE1279851C10013E746;
 			productRefGroup = DCBC4DEB279851C10013E746 /* Products */;
@@ -291,7 +302,9 @@
 				DC3704562798FE5600FC2759 /* SeoulNamsanvert.otf in Resources */,
 				DC3704542798FE5600FC2759 /* SeoulNamsanEB.otf in Resources */,
 				DC3704552798FE5600FC2759 /* SeoulNamsanM.otf in Resources */,
+				DCDCDE6527C6290F00D5333F /* Localizable.strings in Resources */,
 				DCBC4DF2279851C30013E746 /* Assets.xcassets in Resources */,
+				DCDCDE6A27C638B900D5333F /* thinguns_eng.json in Resources */,
 				DC3704572798FE5600FC2759 /* SeoulNamsanL.otf in Resources */,
 				DCBC4E012798526F0013E746 /* thinguns.json in Resources */,
 				DC3704582798FE5600FC2759 /* SeoulNamsanB.otf in Resources */,
@@ -305,13 +318,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DCBC4E05279855570013E746 /* ThingunListView.swift in Sources */,
 				DC370462279920D200FC2759 /* Thingun+CoreDataClass.swift in Sources */,
 				DC37045D27991DD700FC2759 /* ThingunDataModel.xcdatamodeld in Sources */,
 				DC370465279920D200FC2759 /* Notes+CoreDataProperties.swift in Sources */,
 				DCBC4E07279855A40013E746 /* Thingun.swift in Sources */,
+				DC69DDF8279AB02800239265 /* EditThingunView.swift in Sources */,
 				DCBC4DF0279851C10013E746 /* ThingunTabView.swift in Sources */,
 				DCBC4E09279856920013E746 /* DataService.swift in Sources */,
+				DCF37625279A63B300B0791A /* ListView.swift in Sources */,
 				DCF376202799C28900B0791A /* ImagePicker.swift in Sources */,
 				DC37048827993B0D00FC2759 /* Constants.swift in Sources */,
 				DCF3761E2799B72900B0791A /* AddMetaData.swift in Sources */,
@@ -330,11 +344,24 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXVariantGroup section */
+		DCDCDE6727C6290F00D5333F /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DCDCDE6627C6290F00D5333F /* en */,
+				DCDCDE6827C6293D00D5333F /* ko */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
 		DCBC4DF6279851C30013E746 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -396,6 +423,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -452,6 +480,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"myThingun/Preview Content\"";
@@ -460,22 +489,22 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = myThingun/Info.plist;
 				INFOPLIST_KEY_NSCameraUsageDescription = "Access to the camera to take a photo";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "띵언카드를 만들기 위해서 사진앨범에 접근이 필요합니다.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = io.taewankim.myThingun;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -484,6 +513,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"myThingun/Preview Content\"";
@@ -492,22 +522,22 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = myThingun/Info.plist;
 				INFOPLIST_KEY_NSCameraUsageDescription = "Access to the camera to take a photo";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "띵언카드를 만들기 위해서 사진앨범에 접근이 필요합니다.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = io.taewankim.myThingun;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

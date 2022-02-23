@@ -9,24 +9,46 @@ import SwiftUI
 
 struct ThingunFeaturedView: View {
     
-    
-    //@EnvironmentObject var model:ThingunModel
     @State var isDetailViewShowing = false
     @State var tabSelectionIndex = 0
+    @State var cardCountIndex = 0
     
-    @FetchRequest(sortDescriptors: [NSSortDescriptor(key: "content", ascending: true)], predicate: NSPredicate(format: "featured == true")) var thinguns: FetchedResults<Thingun>
+    @Environment(\.managedObjectContext) private var viewContext
+    
+    //@EnvironmentObject var model:ThingunModel
+    @FetchRequest(sortDescriptors: [NSSortDescriptor(key: "content", ascending: true)])
+    private var thinguns: FetchedResults<Thingun>
+    
+    @State private var filterBy = ""
+    
+    private var filteredThinguns: [Thingun] {
+        
+        if filterBy.trimmingCharacters(in: .whitespacesAndNewlines) == "" {
+            //no filter text
+            return Array(thinguns)
+        }
+        else {
+            //filtered by the search term and return a subset of thingun which contain
+            return thinguns.filter { t in
+                
+                return t.content.contains(filterBy)
+                
+                
+            }
+        }
+    }
     
     var body: some View {
         
         VStack(spacing: 10) {
             
             VStack (alignment:.leading, spacing:10) {
-                Text("나만의 띵언")
+                Text("FeaturedViewTitle")
                     .bold()
                     .padding(.top, 40)
                     .padding(.horizontal)
                     .font(.custom("SeoulNamsanB", size:28))
-                Text("내 삶에 힘이 되는 나만의 띵언을 모아보세요.")
+                Text("FeaturedViewSubTitle")
                     .font(.custom("SeoulNamsanL", size:15))
                     .padding(.horizontal)
                 
@@ -37,10 +59,9 @@ struct ThingunFeaturedView: View {
                     TabView (selection: $tabSelectionIndex) {
                         
                         // Loop through each recipe
-                        ForEach (0..<thinguns.count) { index in
+                        ForEach (filteredThinguns, id: \.self) { t in
                             
-                            // Only show those that should be featured
-                            
+                            // 카드를 하나씩
                             
                             // Recipe card button
                             Button(action: {
@@ -54,19 +75,25 @@ struct ThingunFeaturedView: View {
                                 ZStack {
                                     
                                     
-                                    let image = UIImage(data: thinguns[index].image ?? Data()) ?? UIImage()
+                                    let image = UIImage(data: t.image ?? Data()) ?? UIImage()
                                     Image(uiImage: image)
                                         .resizable()
                                         .aspectRatio(contentMode: .fill)
                                         .clipped()
+                        
+                                        Text(t.content)
+                                            .multilineTextAlignment(.center)
+                                            .padding()
+                                            .frame(width: geo.size.width - 70, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                                            .font(.custom("SeoulNamsanB", size:22))
+                                            .lineSpacing(3)
+                                            .background(Color.white.opacity(0.7))
+                                            .cornerRadius(5)
+                                        
+                                        
                                     
-                                    Text(thinguns[index].content)
-                                        .multilineTextAlignment(.center)
-                                        .padding()
-                                        .frame(width: geo.size.width - 70, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                                        .font(.custom("SeoulNamsanB", size:22))
-                                        .background(Color.white.opacity(0.7))
-                                        .cornerRadius(5)
+                                       
+                                     
                                     
                                     
                                     
@@ -74,10 +101,10 @@ struct ThingunFeaturedView: View {
                                 }
                                 
                             })
-                                .tag(index)
+                                .tag(t)
                                 .sheet(isPresented: $isDetailViewShowing) {
                                     // Show the Recipe Detail View
-                                    ThingunDetailView(thingun: thinguns[index])
+                                    ThingunDetailView(thingun:t)
                                 }
                                 .buttonStyle(PlainButtonStyle())
                                 .frame(width: geo.size.width - 40, height: geo.size.height - 60, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
@@ -88,15 +115,16 @@ struct ThingunFeaturedView: View {
                         }
                         
                     }
-                    .tabViewStyle(PageTabViewStyle(indexDisplayMode: .automatic))
-                    .indexViewStyle(PageIndexViewStyle(backgroundDisplayMode: .always))
+                    .tabViewStyle(.page(indexDisplayMode: .never))
+                    .indexViewStyle(PageIndexViewStyle(backgroundDisplayMode: .never))
+                
                     
                 }
             }
             
             
             VStack (alignment:.center){
-                Text("지금까지 모은 띵언카드: \(thinguns.count) 장")
+                Text("CardCount \(thinguns.count)")
                     .font(.custom("SeoulNamsanB", size:15))
                     .padding(.horizontal)
                     .multilineTextAlignment(.center)

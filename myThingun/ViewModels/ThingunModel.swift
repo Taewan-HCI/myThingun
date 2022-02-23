@@ -21,6 +21,12 @@ class ThingunModel: ObservableObject {
         // check if we have pre loaded the data into core data
         checkLoadedData()
         
+        
+    }
+    
+    func deletePost(thingun: Thingun) throws{
+        self.managedObjectContext.delete(thingun)
+        try self.managedObjectContext.save()
     }
     
     func checkLoadedData() {

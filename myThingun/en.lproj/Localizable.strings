@@ -1,0 +1,50 @@
+/* 
+  Localizable.strings
+  myThingun
+
+  Created by Taewan Kim on 2022/02/23.
+  
+*/
+
+//Tab View
+"tab1" = "My Quotes";
+"tab2" = "Add Quotes";
+"tab3" = "See all Quotes";
+
+
+//Featured View
+"FeaturedViewTitle" = "My Inspirational Quotes";
+"FeaturedViewSubTitle" = "Swipe left/right to explore your quote cards that gives strength to your life.";
+"CardCount %lld" = "Number of cards collected: %lld cards";
+
+//List View
+"ListViewSubTitle" = "Collect your quotes that give strength to your life. Swipe left to delete a card.";
+"AlertTitle_delte" = "You must leave at least one quote card";
+"AlertContent_delte" = "If you want to delete this card, create another card and delete it";
+"AlertButton_delte" = "Confirm";
+"SearchbarTitle" = "Search Quote..";
+
+//Add View
+"Register" = "Register";
+"Clear all" = "Clear all";
+
+"AddViewTitle" = "Register a new Quote Card";
+"AddViewSubTitle" = "Collect your Quote that gives strength to your life.";
+
+"Add from PhotoLibrary" = "Import from photo library";
+
+"InputTitle_1" = "What quote would you like to add?";
+"InputSubTitle_1" = "A quote I would like to add is";
+
+"InputTitle_2" = "Any notes you want to leave with this quote?";
+"InputSubTitle_2" = "The reason I want to save this quote is";
+
+"InputTitle_3" = "Who made it?";
+"InputSubTitle_3" = "This quote is made by";
+
+"InputTitle_4" = "When did you write it?";
+"InputSubTitle_4" = "Date, year, time can be anything";
+
+"AlertTitle_add" = "There are unfilled items";
+"AlertContent_add" = "You must fill in all information, including photos, to register. Make a meaningful quote card that you can see again and again :)";
+"AlertButton_delte" = "Confirm";

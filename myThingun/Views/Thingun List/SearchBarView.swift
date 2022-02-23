@@ -10,6 +10,7 @@ import SwiftUI
 struct SearchBarView: View {
     
     @Binding var filterBy: String
+    @FocusState private var nameIsFocused: Bool
     
     
     var body: some View {
@@ -22,9 +23,11 @@ struct SearchBarView: View {
             
             HStack {
                 Image(systemName: "magnifyingglass")
-                TextField("띵언 찾아보기..", text: $filterBy)
+                TextField("SearchbarTitle", text: $filterBy)
+                    .focused($nameIsFocused)
                 Button {
                     filterBy = ""
+                    nameIsFocused = false
                 } label: {
                     Image(systemName: "multiply.circle.fill")
                        

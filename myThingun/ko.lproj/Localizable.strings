@@ -1,0 +1,49 @@
+/* 
+  Localizable.strings
+  myThingun
+
+  Created by Taewan Kim on 2022/02/23.
+  
+*/
+
+//Tab View
+"tab1" = "내가 좋아하는 띵언";
+"tab2" = "띵언카드 추가하기";
+"tab3" = "모든 띵언 보기";
+
+//Featured View
+"FeaturedViewTitle" = "나만의 띵언";
+"FeaturedViewSubTitle" = "내 삶에 힘이 되는 나만의 띵언카드를 좌/우로 스와이프하여 탐색해보세요.";
+"CardCount %lld" = "지금까지 모은 띵언카드: %lld장";
+
+//List View
+"ListViewSubTitle" = "내 삶에 힘이 되는 나만의 띵언을 모아보세요. 카드를 삭제하시려면 왼쪽으로 밀어보세요.";
+"AlertTitle_delte" = "최소 1개 이상의 띵언카드를 남겨주셔야 해요";
+"AlertContent_delte" = "만약 이 카드를 지우고 싶다면, 다른 1개의 띵언카드를 만드시고 삭제해주세요";
+"AlertButton_delte" = "확인";
+"SearchbarTitle" = "띵언 찾아보기..";
+
+//Add View
+"Register" = "등록하기";
+"Clear all" = "모두 지우기";
+
+"AddViewTitle" = "새로운 띵언 등록하기";
+"AddViewSubTitle" = "내 삶에 힘이 되는 나만의 띵언을 모아보세요.";
+
+"Add from PhotoLibrary" = "사진첩에서 가져오기";
+
+"InputTitle_1" = "추가하려는 띵언은?";
+"InputSubTitle_1" = "내가 추가하려는 띵언이 무엇이냐면요";
+
+"InputTitle_2" = "같이 남기고 싶은 메모는?";
+"InputSubTitle_2" = "이 띵언을 기록하려는 이유는요";
+
+"InputTitle_3" = "누가 만든 띵언인가요?";
+"InputSubTitle_3" = "이 띵언은 누가 만들었냐면";
+
+"InputTitle_4" = "언제로 기억되기 원하나요?";
+"InputSubTitle_4" = "날짜, 연도, 시간 뭐든지 가능해요";
+
+"AlertTitle_add" = "내용이 없어요";
+"AlertContent_add" = "사진을 포함해서 모든 내용을 채워주셔야 등록이 가능해요. 두고두고 볼 수 있는 의미있는 띵언카드를 만들어보세요 :)";
+"AlertButton_delte" = "다시 입력하러 가기";

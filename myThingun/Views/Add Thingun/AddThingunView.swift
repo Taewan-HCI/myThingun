@@ -7,9 +7,11 @@
 
 import SwiftUI
 
+
 struct AddThingunView: View {
     
     @Environment(\.managedObjectContext) private var viewContext
+    
     
     //
     @Binding var tabSelection: Int
@@ -29,6 +31,11 @@ struct AddThingunView: View {
     //thingun image
     @State private var image: UIImage?
     
+    @State private var showingAlert = false
+
+    
+    
+    
     
     var body: some View {
         
@@ -40,30 +47,33 @@ struct AddThingunView: View {
                 Button {
                     clear()
                 } label: {
-                    Text("모두지우기")
+                    Text("Clear all")
                         .font(.custom("SeoulNamsanB", size:15))
-                        .foregroundColor(.black)                
                 }
 
                 Spacer()
                 Button  {
-                    addThingun()
-                    clear()
-                    tabSelection = 0
+                    if content != "" && summary != "" && author != "" && date != "" && image != nil {
+                        addThingun()
+                        clear()
+                        tabSelection = 0
+                    }
+                    else {
+                        showingAlert = true
+                    }
+                    
                 } label: {
-                    Text("등록하기")
+                    Text("Register")
                         .font(.custom("SeoulNamsanB", size:15))
-                        .foregroundColor(.black)
                 }
 
                 
             }.padding(.top)
             
-            Text("새로운 띵언 등록하기")
+            Text("AddViewTitle")
                 .bold()
-               
                 .font(.custom("SeoulNamsanB", size:28))
-            Text("내 삶에 힘이 되는 나만의 띵언을 모아보세요.")
+            Text("AddViewSubTitle")
                 .padding(.bottom, 10)
                 .font(.custom("SeoulNamsanL", size:15))
             
@@ -73,21 +83,25 @@ struct AddThingunView: View {
                 VStack (alignment:.leading) {
                     
                     //placeholder image
-                    placeHolderImage
-                        .resizable()
-                        .aspectRatio(contentMode: .fill)
-                        .frame(height: 180)
-                        .clipped()
                     
-                    HStack{
+                    
+                    HStack (alignment:.center){
                         
                         Button {
                             selectedImageSource = .photoLibrary
                             isShowingImagePicker = true
                         } label: {
-                            Text("사진첩에서 가져오기")
-                                .font(.custom("SeoulNamsanB", size:15))
-                                .foregroundColor(.black)
+                            VStack(alignment: .center){
+                                placeHolderImage
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fill)
+                                    .frame(height: 180)
+                                    .clipped()
+                                    .cornerRadius(10)
+                                Text("Add from PhotoLibrary")
+                                    .font(.custom("SeoulNamsanB", size:15))
+                            }
+                            
                         }
 
                         
@@ -113,6 +127,11 @@ struct AddThingunView: View {
                 
             }
         }
+        .alert(isPresented: $showingAlert) {
+                    Alert(title: Text("AlertTitle_add"),
+                          message: Text("AlertContent_add"),
+                          dismissButton: .default(Text("AlertButton_delte")))
+                }
         .padding(.horizontal)
         .onTapGesture {
             let resign = #selector(UIResponder.resignFirstResponder)
